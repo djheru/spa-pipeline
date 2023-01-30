@@ -10,7 +10,8 @@
     "lint": "eslint --ignore-path .eslintignore --ext .ts .",
     "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json)\"",
     "test": "jest",
-    "cdk": "cdk"
+    "cdk": "cdk",
+    "deploy": "npm run cdk deploy -- --require-approval never"
   },
   "devDependencies": {
     "@types/aws-lambda": "^8.10.110",
