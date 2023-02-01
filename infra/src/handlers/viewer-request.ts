@@ -129,7 +129,7 @@ export const handler: CloudFrontRequestHandler = (
 
   headers = setContextHeader(requestHeaders, blueGreenContext);
 
-  if (uri === '/' && blueGreenContext !== contextCookie) {
+  if (!uri.includes('.') && blueGreenContext !== contextCookie) {
     return callback(null, setCookieRequest(uri, blueGreenContext));
   }
 
