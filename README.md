@@ -517,3 +517,4 @@ See the implementation of these methods for details.
 ### Lambda Functions
 
 The lambda functions used to control the blue/green response logic live in `./infra/src/handlers`. These functions are used to check for the blue/green header/cookie/querystring and route traffic accordingly.
+
