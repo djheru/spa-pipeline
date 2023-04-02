@@ -1,7 +1,7 @@
 # Website Pipeline Infrastructure Project
 
 This is a project for CDK development with TypeScript. It is used for deploying a web page with a Blue/Green pipeline. The React project lives in the root directory and the CDK project lives in the `./infra` subdirectory as an independent node.js project.
-
+ 
 It depends on the following resources being available:
 
 - A GitHub repo with these contents
